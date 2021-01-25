@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Drawing App</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+
+        <!--jQuery UI south-street theme(green)-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css">
+
+        <!--custom style-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--title-->
+        <div id="header">Drawing App</div>
+
+        <!--input-->
+        <div class="inputContainer" >
+
+            <!--color-->
+            <div class="input" id="colorInput">
+                <input type="color" list id="paintColor">      
+            </div>
+            
+            <!--line thickeness-->
+            <div class="input" id="thickenessInput">
+                <div id="circle"></div>
+            </div>
+            
+            <!--slider-->
+            <div class="input">
+                <div id="slider"></div>
+            </div>         
+
+            <div class="shapes">
+                <button id="triangle-btn">Triangle</button>
+                <button id="circle-btn">Circle</button>
+                <button id="rectangle-btn">Rectangle</button>
+                <button id="line-btn">Line</button>
+            </div>
+        </div>        
+
+        <!--canvas-->
+        <div id="canvasContainer">
+            <canvas id="paint" width="500px" height="400px"></canvas>
+        </div>
+
+        <div class="imgs">
+            <button id="img1-btn">Image 1</button>
+            <button id="img2-btn">Image 2</button>
+            <button id="img3-btn">Image 3</button>
+        </div>
+
+        <div class="bg">
+            <button id="bg1-btn">Background 1</button>
+            <button id="bg2-btn">Background 2</button>
+            <button id="bg3-btn">Background 3</button>
+        </div>
+
+        <!-- buttons-->
+        <div class="btnContainer">
+            <!--Erase button -->
+            <div class="btnInput erase-btn">
+                <span id="erase" class="button">Erase</span>
+            </div>        
+            <!--Reset button -->
+            <div class="btnInput">
+                <span id="reset" class="button">Reset</span>
+            </div>       
+        </div>
+
+        <!-- jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- jQuery UI-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <!--javascript-->
+        <script src="javascript.js">
+        </script>
+    </body>
+</html>
